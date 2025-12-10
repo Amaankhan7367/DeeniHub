@@ -1,0 +1,154 @@
+/* ---------------- GLOBAL ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+body {
+  background: #f2f7f4; /* Soft Islamic pastel green */
+  color: #1a1a1a;
+}
+
+/* ---------------- OUTER CONTAINER ---------------- */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  width: 100%;
+}
+
+/* ---------------- LOGIN CARD ---------------- */
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  padding: 40px 34px;
+  border-radius: 18px;
+
+  box-shadow: 0 12px 32px rgba(0, 64, 39, 0.08);
+  border: 1px solid rgba(0, 64, 39, 0.08);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px rgba(0, 64, 39, 0.12);
+}
+
+/* ---------------- LOGO ---------------- */
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.logo-box {
+  width: 100px;
+}
+
+/* ---------------- TITLE ---------------- */
+.login-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 8px;
+
+  color: #064e3b;  /* Deep Islamic green */
+}
+
+/* ---------------- SUBTEXT ---------------- */
+.login-subtext {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: #6f6f6f;
+}
+
+.signin-link {
+  color: #0d7a47; /* Soft Islamic green */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signin-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------------- ERROR TEXT ---------------- */
+.error-text {
+  text-align: center;
+  color: #d62828;
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ---------------- FORM SPACING ---------------- */
+.form-space {
+  margin-top: 25px;
+}
+
+.form-space > * + * {
+  margin-top: 20px;
+}
+
+/* ---------------- INPUT PREMIUM ISLAMIC ---------------- */
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  border: 1px solid #c2cfc9;
+  background: #f9fbfa;
+  transition: all 0.25s ease;
+}
+
+input:focus {
+  border-color: #0d7a47;
+  background: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(13, 122, 71, 0.15);
+}
+
+label {
+  font-weight: 600;
+  color: #084c37;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* ---------------- BUTTON ---------------- */
+
+.btn-full {
+  width: 100%;
+}
+
+button.btn-full {
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #0d7a47, #0a5a35);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(13, 122, 71, 0.22);
+  transition: all 0.25s ease;
+}
+
+button.btn-full:hover {
+  background: linear-gradient(135deg, #0c6c40, #084e2f);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(13, 122, 71, 0.30);
+}
+
+button.btn-full:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}

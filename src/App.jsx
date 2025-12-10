@@ -12,27 +12,30 @@ function App() {
 
   useEffect(() => {
     authService.getCurrentUser()
-    .then((userData) => {
-      if (userData) {
-        dispatch(login({userData}))
-      } else {
-        dispatch(logout())
-      }
-    })
-    .finally(() => setLoading(false))
-  }, [])
-  
+      .then((userData) => {
+        if (userData) {
+          dispatch(login({userData}))
+        } else {
+          dispatch(logout())
+        }
+      })
+      .finally(() => setLoading(false))
+  }, [dispatch])
+
   return !loading ? (
-    <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>
-      <div className='w-full block'>
-        <Header />
-        <main>
-        TODO:  <Outlet />
-        </main>
-        <Footer />
-      </div>
+    <div className="deeni-app">
+      <Header />
+      <main className="deeni-main">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
-  ) : null
+  ) : (
+    <div className="deeni-loader">
+      <div className="loader-circle"></div>
+      <p className="loader-text">Loading DeeniHub...</p>
+    </div>
+  )
 }
 
 export default App

@@ -1,0 +1,46 @@
+/* --- POST CARD PREMIUM ISLAMIC THEME --- */
+
+.postcard-link {
+  text-decoration: none;
+}
+
+.postcard {
+  background: linear-gradient(135deg, #e8f8f0, #dff6ec);
+  border: 1px solid rgba(52, 199, 89, 0.25);
+  border-radius: 18px;
+  
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(52, 199, 89, 0.2);
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.postcard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(52, 199, 89, 0.35);
+}
+
+.postcard-image-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.postcard-image {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(60, 120, 80, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.postcard:hover .postcard-image {
+  transform: scale(1.03);
+}
+
+.postcard-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #145a32;
+  letter-spacing: 0.5px;
+}

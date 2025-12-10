@@ -1,0 +1,29 @@
+/* --- DEENIHUB LOGO --- */
+
+.deeni-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.logo-icon {
+  font-size: 24px;
+  background: #1f8a4b;           /* Islamic green */
+  color: white;
+  padding: 6px 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(31, 138, 75, 0.25);
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #145a32;
+  letter-spacing: 0.5px;
+}
+
+.logo-text span {
+  color: #0d9e55;               /* lighter Islamic green */
+}

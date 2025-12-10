@@ -1,0 +1,102 @@
+/* -------------------------------------
+        PREMIUM ISLAMIC NAVBAR
+-------------------------------------- */
+
+/* Header wrapper */
+.nav-header {
+  background: rgba(8, 64, 40, 0.85); /* Deep Islamic green glass */
+  backdrop-filter: blur(12px);       /* Glass effect */
+  padding: 12px 0;
+
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 25px rgba(0, 64, 39, 0.18);
+}
+
+/* Navigation bar layout */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo box */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Buttons inside navbar */
+.nav-btn {
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 15px;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-weight: 500;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Logout button override */
+.logout-btn {
+  margin-left: 10px;
+}
+
+/* -------------------------------------
+      RESPONSIVE NAVBAR
+-------------------------------------- */
+
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 6px;
+  }
+
+  .nav-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+/* -------------------------------------
+      RESPONSIVE NAVBAR FIX
+-------------------------------------- */
+
+@media (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;  /* Logo upar, buttons neeche */
+    align-items: flex-start;
+    gap: 6px;                /* Zabardasti bada space nahi hoga */
+  }
+
+  .nav-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Logo center me */
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center; /* Buttons center */
+    gap: 6px;
+    flex-wrap: wrap;         /* Buttons mix-up nahi honge */
+  }
+
+  .nav-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}

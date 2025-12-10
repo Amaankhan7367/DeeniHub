@@ -1,0 +1,87 @@
+/* ----- DEENIHUB PREMIUM FOOTER ----- */
+
+.deeni-footer {
+  background: rgba(8, 64, 40, 0.85);                    /* Soft Islamic gray-green */
+  border-top: 3px solid #146c43;
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Subtle top Islamic pattern */
+.deeni-footer::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: url("https://www.transparenttextures.com/patterns/arabesque.png");
+  opacity: 0.12;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Columns */
+.footer-col {
+  flex: 1 1 220px;
+}
+
+.footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+/* Titles */
+.footer-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* List Styles */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: #0f6b3d;
+  padding-left: 4px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+  }
+}
