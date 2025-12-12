@@ -18,6 +18,11 @@ function Footer() {
               © Copyright {new Date().getFullYear()} — DeeniHub.  
               <br />All Rights Reserved.
             </p>
+            <br />
+            <p className="footer-copy">
+              RTA®
+            </p>
+            
           </div>
 
           {/* Company */}

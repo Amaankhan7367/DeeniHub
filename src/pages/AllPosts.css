@@ -1,0 +1,46 @@
+/* Main wrapper */
+.all-posts {
+    width: 100%;
+    padding: 2rem 0;
+    
+}
+
+/* Inner container */
+.all-posts-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid of posts */
+.posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem; /* compensate padding */
+}
+
+/* Single post wrapper */
+.post-item {
+    padding: 0.5rem;
+    width: 25%; /* 4 columns on desktop */
+    box-sizing: border-box;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+    .post-item {
+        width: 33.3333%; /* 3 columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .post-item {
+        width: 50%; /* 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .post-item {
+        width: 100%; /* 1 column */
+    }
+}
